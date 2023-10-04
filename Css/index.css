@@ -1,0 +1,1257 @@
+@import "./reset.css";
+@import "./navbar.css";
+@import "./footer.css";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --black: #000008;
+  --blue: #0530ad;
+  --grey: #dedede;
+  --white: #ffffff;
+  --aquamarine: #7fffd4;
+}
+
+*::selection {
+  color: var(--blue);
+  background-color: var(--grey);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "DM Sans", sans-serif;
+}
+
+section:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+  padding: 6em 0 2em 3em;
+}
+
+section:nth-of-type(1) > img {
+  width: 650px;
+  height: 400px;
+  object-fit: fill;
+}
+
+.autonomous-cargo {
+  max-width: 600px;
+}
+
+.autonomous-cargo h1 {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: var(--black);
+  line-height: 1.3em;
+  padding-bottom: 15px;
+}
+
+.autonomous-cargo > p {
+  font-size: 17px;
+  font-weight: 400;
+  color: grey;
+  line-height: 24px;
+  letter-spacing: 1px;
+  max-width: 540px;
+  padding-bottom: 20px;
+}
+
+.autonomous-cargo .para-flex {
+  display: flex;
+  align-items: center;
+  padding-top: 2em;
+  justify-content: space-between;
+  max-width: 350px;
+}
+
+.autonomous-cargo .para-flex .group {
+  text-align: center;
+}
+
+.autonomous-cargo .para-flex .group p:nth-child(1) {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--black);
+  letter-spacing: 2px;
+}
+
+.autonomous-cargo .para-flex span {
+  border-right: 2px solid grey;
+  height: 85px;
+}
+
+.autonomous-cargo .para-flex .group p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 500;
+  color: grey;
+}
+
+.container-box {
+  padding: 2em 0 1em 0;
+}
+
+.container-box > p {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--black);
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.container-box > p span {
+  color: var(--blue);
+}
+
+.container-box .group-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4em;
+  padding: 3em 0 0;
+}
+
+.elevating-cargo {
+  position: relative;
+  top: 80px;
+  padding: 0 2em 2em 2em;
+}
+
+.elevating-cargo .parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10em;
+  padding-bottom: 3em;
+}
+
+.elevating-cargo .parent h1 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.3em;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.elevating-cargo .parent .children {
+  max-width: 300px;
+}
+
+.elevating-cargo .parent .children > p {
+  font-size: 17px;
+  font-weight: 400;
+  color: grey;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+
+.elevating-cargo .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.elevating-cargo .img img {
+  width: 80%;
+  height: 350px;
+  object-fit: fill;
+  border-radius: 10px;
+}
+
+.advanced-capabilities,
+.cargo-operations {
+  text-align: center;
+}
+
+.advanced-capabilities h1,
+.cargo-operations h1,
+.trailblazing-partners h1 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.3em;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+.advanced-capabilities p,
+.cargo-operations p,
+.trailblazing-partners p {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--grey);
+}
+
+section:nth-of-type(4) {
+  background: var(--black);
+  padding: 10em 0 2em;
+}
+
+.autonomous-driving {
+  display: flex;
+  align-items: center;
+  column-gap: 2em;
+  padding: 4em 2em 2em;
+}
+
+.autonomous-driving .img img {
+  width: 550px;
+  height: 350px;
+  object-fit: fill;
+  border-radius: 18px;
+}
+
+.autonomous-driving .group-content {
+  max-width: 500px;
+}
+
+.autonomous-driving .group-content h2 {
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 13px 0;
+  color: var(--white);
+}
+
+.autonomous-driving .group-content h2:nth-child(2),
+.autonomous-driving .group-content h2:nth-child(4),
+.autonomous-driving .group-content h2:nth-child(6),
+.autonomous-driving .group-content h2:nth-child(8) {
+  color: var(--grey);
+}
+
+.autonomous-driving .group-content p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--grey);
+  padding-bottom: 15px;
+}
+
+.autonomous-driving .group-content div {
+  border: 1px solid var(--white);
+}
+
+.cargo-operations {
+  padding: 4em 0 2em;
+}
+
+.cargo-operations .groups {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1em;
+  text-align: start;
+  padding: 4em 3em 2em;
+}
+
+.cargo-operations .groups span {
+  border: 2px solid var(--white);
+  height: 230px;
+}
+
+.cargo-operations .groups i {
+  padding: 10px;
+  background: var(--aquamarine);
+  font-size: 1.7em;
+  border-radius: 10px;
+}
+
+.cargo-operations .groups p:nth-child(2),
+.container-groups h3 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--white);
+  line-height: 31px;
+  padding: 15px 0;
+}
+
+.cargo-operations .groups p:nth-child(3),
+.container-groups p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--grey);
+  max-width: 350px;
+}
+
+.trailblazing-partners {
+  text-align: center;
+  padding: 3em 0 2em;
+}
+
+.trailblazing-partners h1,
+.container-groups h3 {
+  color: var(--black);
+}
+
+.trailblazing-partners p,
+.container-groups p {
+  color: grey;
+}
+
+.container-groups {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em 0;
+  flex-wrap: wrap;
+  padding: 1em 3em 2em;
+}
+
+.container-groups h3 {
+  text-transform: capitalize;
+  padding: 6px 0;
+}
+
+.container-groups p {
+  font-size: 15px;
+}
+
+.container-groups span {
+  border: 2px solid var(--blue);
+  height: 150px;
+  margin: 0 20px;
+}
+
+#border {
+  border: 2px solid var(--blue);
+  margin: 3em 5em 0;
+}
+
+.btn-scroll {
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--grey);
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+
+.btn-scroll i {
+  font-size: 2em;
+  color: var(--white);
+}
+
+.btn-scroll.active {
+  opacity: 1;
+  visibility: visible;
+  bottom: 60px;
+}
+
+/******************************************************************media query*****************************************************************/
+@media screen and (max-width: 320px) {
+  section:nth-of-type(1) {
+    padding: 5em 1em 1em;
+    flex-direction: column;
+    gap: 1em 0;
+  }
+
+  .autonomous-cargo,
+  .elevating-cargo .parent .children {
+    max-width: max-content;
+  }
+
+  .autonomous-cargo h1 {
+    font-size: 19px;
+    line-height: 1.2em;
+    padding-bottom: 10px;
+  }
+
+  .autonomous-cargo > p {
+    font-size: 12px;
+    line-height: 15px;
+    max-width: max-content;
+    padding-bottom: 15px;
+  }
+
+  .btn button {
+    font-size: 13px;
+    padding: 6px 13px;
+  }
+
+  .autonomous-cargo .para-flex {
+    padding-top: 1em;
+    max-width: 250px;
+  }
+
+  .autonomous-cargo .para-flex .group p:nth-child(1) {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .autonomous-cargo .para-flex .group p:nth-child(2) {
+    font-size: 13px;
+  }
+
+  .autonomous-cargo .para-flex span {
+    height: 75px;
+  }
+
+  section:nth-of-type(1) > img {
+    width: 105%;
+    height: 200px;
+  }
+
+  section:nth-of-type(1) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .container-box {
+    padding: 1em 0 0;
+  }
+
+  .container-box > p {
+    font-size: 14px;
+  }
+
+  .container-box .group-img {
+    justify-content: start;
+    column-gap: 2em;
+    padding: 2em 0 1.5em;
+    overflow-x: scroll;
+    overflow-y: auto;
+    scroll-snap-type: x;
+  }
+
+  .container-box .group-img img {
+    width: 85px;
+  }
+
+  .elevating-cargo {
+    position: relative;
+    top: 60px;
+    padding: 0 1em 1em 1em;
+  }
+
+  .elevating-cargo .parent {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 5px;
+    padding-bottom: 2em;
+  }
+
+  .elevating-cargo .parent h1 {
+    font-size: 19px;
+  }
+
+  .elevating-cargo .parent .children > p {
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 10px;
+  }
+
+  .elevating-cargo .img img {
+    width: 100%;
+    height: 150px;
+  }
+
+  section:nth-of-type(4) {
+    padding: 6em 0 1em;
+  }
+
+  .advanced-capabilities h1,
+  .cargo-operations h1,
+  .trailblazing-partners h1 {
+    font-size: 19px;
+    padding-bottom: 15px;
+  }
+
+  .advanced-capabilities p,
+  .cargo-operations p,
+  .trailblazing-partners p,
+  .autonomous-driving .group-content p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .autonomous-driving {
+    flex-direction: column;
+    gap: 1em 0;
+    padding: 2em 1em 1em;
+  }
+
+  .autonomous-driving .img img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .autonomous-driving .group-content h2 {
+    font-size: 14px;
+  }
+
+  .cargo-operations {
+    padding: 1em 0 2em;
+  }
+
+  .cargo-operations .groups {
+    flex-direction: column;
+    text-align: center;
+    gap: 1em 0;
+    padding: 2em 1em 0;
+  }
+
+  .cargo-operations .groups i {
+    padding: 8px;
+    font-size: 1em;
+  }
+
+  .cargo-operations .groups p:nth-child(2),
+  .container-groups h3 {
+    font-size: 15px;
+    line-height: 24px;
+    padding: 10px 0 5px 0;
+  }
+
+  .cargo-operations .groups p:nth-child(3),
+  .container-groups p {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: max-content;
+  }
+
+  .cargo-operations .groups span {
+    height: 0;
+    border-bottom: 2px solid var(--white);
+    width: 250px;
+  }
+
+  .trailblazing-partners {
+    padding: 1em 0 1em;
+  }
+
+  .container-groups {
+    gap: 1em 0;
+    padding: 1em 1em 2em;
+  }
+
+  .container-groups span {
+    height: 0px;
+    width: 180px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  section:nth-of-type(1) {
+    flex-direction: column;
+    gap: 2em;
+    padding: 5em 1em 2em;
+  }
+
+  .autonomous-cargo {
+    max-width: max-content;
+  }
+
+  .autonomous-cargo h1 {
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+
+  .autonomous-cargo > p {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: max-content;
+    padding-bottom: 15px;
+  }
+
+  .btn button {
+    font-size: 13px;
+    padding: 7px 15px;
+  }
+
+  .autonomous-cargo .para-flex {
+    padding-top: 1em;
+    max-width: 300px;
+  }
+
+  .autonomous-cargo .para-flex .group p:nth-child(1) {
+    font-size: 22px;
+  }
+
+  .autonomous-cargo .para-flex .group p:nth-child(2) {
+    font-size: 16px;
+  }
+
+  section:nth-of-type(1) > img {
+    width: 100%;
+    height: 170px;
+  }
+
+  .container-box {
+    padding: 0em 1em 1em;
+  }
+
+  .container-box > p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .container-box .group-img {
+    justify-content: start;
+    column-gap: 2em;
+    padding: 1.5em 0 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1.2em;
+  }
+
+  .container-box .group-img img {
+    width: 95px;
+  }
+
+  .elevating-cargo {
+    top: 70px;
+    padding: 0 1em 0em;
+  }
+
+  .elevating-cargo .parent {
+    align-items: start;
+    flex-direction: column;
+    gap: 10px 0;
+  }
+
+  .elevating-cargo .parent h1 {
+    font-size: 22px;
+  }
+
+  .elevating-cargo .parent .children {
+    max-width: max-content;
+  }
+
+  .elevating-cargo .parent .children > p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .elevating-cargo .img img {
+    width: 100%;
+    height: 150px;
+  }
+
+  section:nth-of-type(4) {
+    padding: 8em 0 0;
+  }
+
+  .advanced-capabilities h1,
+  .cargo-operations h1,
+  .trailblazing-partners h1 {
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+
+  .advanced-capabilities p,
+  .cargo-operations p,
+  .trailblazing-partners p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .autonomous-driving {
+    flex-direction: column;
+    gap: 1.5em 0;
+    padding: 2em 1em 0em;
+  }
+
+  .autonomous-driving .img img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .autonomous-driving .group-content h2 {
+    font-size: 19px;
+    padding: 12px 0;
+  }
+
+  .autonomous-driving .group-content p {
+    font-size: 13px;
+    line-height: 20px;
+    padding-bottom: 20px;
+  }
+
+  .cargo-operations {
+    padding: 2em 0 1em;
+  }
+
+  .cargo-operations .groups {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5em 0;
+    padding: 3em 1em 1em;
+  }
+
+  .cargo-operations .groups i {
+    padding: 9px;
+    font-size: 1.1em;
+  }
+
+  .cargo-operations .groups p:nth-child(2),
+  .container-groups h3 {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 9px 0;
+  }
+
+  .cargo-operations .groups p:nth-child(3),
+  .container-groups p {
+    font-size: 13px;
+    line-height: 20px;
+    max-width: max-content;
+  }
+
+  .cargo-operations .groups span {
+    height: 0;
+    width: 70%;
+  }
+
+  .trailblazing-partners {
+    padding: 2em 0 1em;
+  }
+
+  .container-groups {
+    gap: 1em 0;
+    padding: 1em;
+  }
+
+  .container-groups span {
+    height: 0;
+    margin: 0 0;
+    width: 80%;
+  }
+
+  .cargo-operations .groups p:nth-child(2),
+  .container-groups h3 {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 6px 0;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  section:nth-of-type(1) {
+    flex-wrap: wrap;
+    padding: 5em 1em 2em;
+    gap: 1.5em 1em;
+  }
+
+  .autonomous-cargo {
+    flex: 1 1 320px;
+    max-width: 400px;
+  }
+
+  .autonomous-cargo h1 {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+
+  .autonomous-cargo > p {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 380px;
+    padding-bottom: 10px;
+  }
+
+  .btn button {
+    font-size: 13px;
+    padding: 6px 13px;
+  }
+
+  .autonomous-cargo .para-flex {
+    padding-top: 1.5em;
+    max-width: 250px;
+  }
+
+  .autonomous-cargo .para-flex span {
+    height: 70px;
+  }
+
+  .autonomous-cargo .para-flex .group p:nth-child(1) {
+    font-size: 23px;
+  }
+
+  .autonomous-cargo .para-flex .group p:nth-child(2) {
+    font-size: 14px;
+  }
+
+  section:nth-of-type(1) > img {
+    width: 43%;
+    height: 320px;
+  }
+
+  .container-box {
+    padding: 0em 3px 1em 3px;
+  }
+
+  .container-box > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .container-box .group-img {
+    column-gap: 2em;
+    padding: 2em 0 0;
+  }
+
+  .container-box .group-img img {
+    width: 110px;
+  }
+
+  #border {
+    margin: 2em 7em 0;
+  }
+
+  .elevating-cargo {
+    top: 60px;
+    padding: 0 1em;
+  }
+
+  .elevating-cargo .parent {
+    gap: 1.5em 1em;
+    padding-bottom: 2em;
+    flex-wrap: wrap;
+  }
+
+  .elevating-cargo .parent h1 {
+    font-size: 25px;
+    flex: 1 1 300px;
+  }
+
+  .elevating-cargo .parent .children > p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .elevating-cargo .img img {
+    width: 90%;
+    height: 200px;
+  }
+
+  section:nth-of-type(4) {
+    padding: 7em 0 1em;
+  }
+
+  .advanced-capabilities h1,
+  .cargo-operations h1,
+  .trailblazing-partners h1 {
+    font-size: 25px;
+    padding-bottom: 15px;
+  }
+
+  .advanced-capabilities p,
+  .cargo-operations p,
+  .trailblazing-partners p {
+    font-size: 14px;
+  }
+
+  .autonomous-driving {
+    padding: 2em 1em 1em;
+    flex-wrap: wrap;
+    gap: 1em 14px;
+  }
+
+  .autonomous-driving .img img {
+    width: 320px;
+    height: 300px;
+  }
+
+  .autonomous-driving .group-content {
+    max-width: 400px;
+    flex: 1 1 320px;
+  }
+
+  .autonomous-driving .group-content h2 {
+    font-size: 19px;
+    padding: 11px 0;
+  }
+
+  .autonomous-driving .group-content p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 10px;
+  }
+
+  .cargo-operations {
+    padding: 1em 0 1em;
+  }
+
+  .cargo-operations .groups {
+    flex-wrap: wrap;
+    gap: 2em 1em;
+    text-align: center;
+    justify-content: center;
+    padding: 2em 1em 1em;
+  }
+
+  .cargo-operations .groups i {
+    padding: 8px;
+    font-size: 1.3em;
+  }
+
+  .cargo-operations .groups p:nth-child(2),
+  .container-groups h3 {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px 0;
+  }
+
+  .cargo-operations .groups p:nth-child(3),
+  .container-groups p {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 300px;
+  }
+
+  .trailblazing-partners {
+    padding: 1em 0 1em;
+  }
+
+  .container-groups {
+    justify-content: center;
+    gap: 1em 0;
+    padding: 1em;
+  }
+
+  .cargo-operations .groups p:nth-child(2),
+  .container-groups h3 {
+    font-size: 16px;
+    padding: 6px 0;
+  }
+
+  .container-groups span {
+    height: 110px;
+    margin: 0 15px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 620px),
+  (not (min-width: 620px) and (max-width:767px)) {
+  .autonomous-cargo {
+    flex: auto;
+    max-width: max-content;
+  }
+
+  .autonomous-cargo > p {
+    max-width: 480px;
+  }
+
+  section:nth-of-type(1) > img {
+    width: 100%;
+    height: 210px;
+  }
+
+  .container-box .group-img {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    justify-content: start;
+    column-gap: 3em;
+    padding: 2em 0 1em;
+    margin: 0 15px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 669px),
+  (not (min-width: 690px) and (max-width:767px)) {
+  .cargo-operations .groups p:nth-child(3),
+  .container-groups p {
+    max-width: max-content;
+  }
+
+  .cargo-operations .groups span {
+    height: 0;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 680px),
+  (not (min-width: 680px) and (max-width:767px)) {
+  .elevating-cargo .parent {
+    gap: 10px 1em;
+    justify-content: start;
+  }
+
+  .elevating-cargo .parent .children {
+    max-width: max-content;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 670px),
+  (not (min-width: 670px) and (max-width:767px)) {
+  .container-groups span {
+    height: 0;
+    margin: 0;
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 685px),
+  (not (min-width: 685px) and (max-width:767px)) {
+  .autonomous-driving .img {
+    width: -webkit-fill-available;
+  }
+
+  .autonomous-driving .img img {
+    width: 100%;
+    height: 220px;
+  }
+
+  .autonomous-driving .group-content {
+    max-width: max-content;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1000px) {
+  section:nth-of-type(1) {
+    padding: 5em 0 2em 1em;
+  }
+
+  .autonomous-cargo {
+    max-width: 450px;
+  }
+
+  .autonomous-cargo h1 {
+    font-size: 29px;
+    padding-bottom: 10px;
+  }
+
+  .autonomous-cargo > p {
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 15px;
+  }
+
+  .btn button {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .autonomous-cargo .para-flex {
+    padding-top: 1em;
+    max-width: 300px;
+  }
+
+  .autonomous-cargo .para-flex .group p:nth-child(1) {
+    font-size: 26px;
+  }
+
+  .autonomous-cargo .para-flex .group p:nth-child(2) {
+    font-size: 16px;
+  }
+
+  section:nth-of-type(1) > img {
+    width: 470px;
+    height: 320px;
+  }
+
+  .elevating-cargo .parent {
+    column-gap: 4em;
+    padding-bottom: 2em;
+  }
+
+  .elevating-cargo .parent h1 {
+    font-size: 29px;
+  }
+
+  .elevating-cargo .parent .children > p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .elevating-cargo .img img {
+    width: 90%;
+    height: 270px;
+  }
+
+  section:nth-of-type(4) {
+    padding: 6em 0 2em;
+  }
+
+  .advanced-capabilities h1,
+  .cargo-operations h1,
+  .trailblazing-partners h1 {
+    font-size: 29px;
+    padding-bottom: 15px;
+  }
+
+  .advanced-capabilities p,
+  .cargo-operations p,
+  .trailblazing-partners p {
+    font-size: 15px;
+  }
+
+  .autonomous-driving {
+    padding: 2em 1em 2em;
+  }
+
+  .autonomous-driving .img img {
+    width: 400px;
+    height: 300px;
+  }
+
+  .cargo-operations {
+    padding: 0em 0 0em;
+  }
+
+  .cargo-operations .groups {
+    padding: 3em 1em 2em;
+  }
+
+  .cargo-operations .groups i {
+    padding: 9px;
+    font-size: 1.5em;
+  }
+
+  .cargo-operations .groups p:nth-child(2),
+  .container-groups h3 {
+    font-size: 22px;
+    line-height: 28px;
+    padding: 11px 0;
+  }
+
+  .cargo-operations .groups p:nth-child(3),
+  .container-groups p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .trailblazing-partners {
+    padding: 1em 0;
+  }
+
+  .container-groups span {
+    height: 110px;
+    margin: 0 12px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 889px),
+  (not (min-width: 889px) and (max-width:1000px)) {
+  section:nth-of-type(1) {
+    padding: 5em 0 1em 1em;
+  }
+
+  .autonomous-cargo h1 {
+    font-size: 25px;
+  }
+
+  .autonomous-cargo > p {
+    font-size: 14px;
+  }
+
+  section:nth-of-type(1) > img {
+    width: 347px;
+    height: 310px;
+  }
+
+  .elevating-cargo .parent {
+    column-gap: 3em;
+    padding-bottom: 1em;
+  }
+
+  .elevating-cargo .parent h1 {
+    font-size: 25px;
+  }
+
+  .elevating-cargo .parent .children > p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .elevating-cargo .img img {
+    height: 200px;
+  }
+
+  .advanced-capabilities h1,
+  .cargo-operations h1,
+  .trailblazing-partners h1 {
+    font-size: 26px;
+    padding-bottom: 12px;
+  }
+
+  .autonomous-driving .group-content h2 {
+    font-size: 20px;
+    padding: 11px 0;
+  }
+
+  .autonomous-driving .group-content p {
+    font-size: 15px;
+    line-height: 21px;
+    padding-bottom: 12px;
+  }
+
+  .autonomous-driving .img img {
+    width: 360px;
+    height: 250px;
+  }
+
+  .cargo-operations .groups {
+    padding: 3em 1em 1em;
+  }
+
+  .cargo-operations .groups i {
+    padding: 8px;
+  }
+
+  .cargo-operations .groups p:nth-child(2),
+  .container-groups h3 {
+    font-size: 21px;
+    padding: 15px 0;
+  }
+
+  .cargo-operations .groups p:nth-child(3),
+  .container-groups p {
+    font-size: 13.7px;
+    line-height: 20px;
+  }
+
+  .container-groups {
+    padding: 1em 1em 2em;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1024px) {
+  section:nth-of-type(1) {
+    padding: 5em 0 1em 1em;
+  }
+
+  .autonomous-cargo h1 {
+    font-size: 31px;
+  }
+
+  section:nth-of-type(1) > img {
+    width: 500px;
+    height: 400px;
+  }
+
+  .autonomous-driving .img img {
+    width: 500px;
+    height: 320px;
+  }
+
+  .cargo-operations .groups p:nth-child(3),
+  .container-groups p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
