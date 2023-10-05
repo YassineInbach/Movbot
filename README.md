@@ -1,1 +1,1 @@
-URL :  https://inbach-yassine.github.io/Movbot/
+URL : https://yassineinbach.github.io/Movbot/
